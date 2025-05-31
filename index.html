@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Product Showcase</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <h1>ShopSmart</h1>
+    <nav class="nav">
+      <button id="menu-toggle">☰</button>
+      <ul id="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="filters">
+      <button class="filter-btn" data-category="all">All</button>
+      <button class="filter-btn" data-category="electronics">Electronics</button>
+      <button class="filter-btn" data-category="clothing">Clothing</button>
+      <button class="filter-btn" data-category="books">Books</button>
+    </section>
+
+    <section class="product-grid" id="productGrid">
+      <!-- Products will be inserted here by JS -->
+    </section>
+  </main>
+
+  <div class="modal" id="productModal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2 id="modalTitle"></h2>
+      <img id="modalImage" src="" alt="" />
+      <p id="modalDescription"></p>
+    </div>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
